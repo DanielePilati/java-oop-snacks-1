@@ -29,6 +29,10 @@ public class ContoBancario {
 		 this.saldo -= importo;
 		 return saldo;
 	}
+	public double versa(double importo) {
+		 this.saldo += importo;
+		 return saldo;
+	}
 	
 	
 	public static void main(String[] args) {
