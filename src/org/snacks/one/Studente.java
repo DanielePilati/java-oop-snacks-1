@@ -32,7 +32,7 @@ public class Studente {
 			this.eta = eta;
 		}
 		public String description () {
-			return this.nome + " " + this.cognome + ", " + this.eta;
+			return this.nome + " " + this.cognome + ", " + this.eta + " anni";
 		}
 		
 		
@@ -40,7 +40,9 @@ public class Studente {
 		
 	public static void main(String[] args) {
 		
-		
+		Studente studente = new Studente("Anselmo","Bitta",24);
+		System.out.println(studente.description());
+
 	}
 
 }
