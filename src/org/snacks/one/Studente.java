@@ -26,6 +26,7 @@ public class Studente {
 			this.eta = eta;
 		}
 		
+		public Studente() {}
 		public Studente(String nome,String cognome,int eta){
 			this.nome = nome;
 			this.cognome = cognome;
