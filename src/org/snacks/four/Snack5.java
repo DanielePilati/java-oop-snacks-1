@@ -4,9 +4,13 @@ import java.util.HashMap;
 
 public class Snack5 {
 	
-	public boolean checkChiaveDuplicata(HashMap<String, String> map, String value){
+	public void checkChiaveDuplicata(HashMap<String, String> map, String value){
 		
-		return map.containsValue(value);
+		if (map.containsValue(value)) {
+			System.out.println("elemento esistente");
+		} else {
+			System.out.println("puoi aggiungere l'elemento");
+		}
 		
 	}
 
