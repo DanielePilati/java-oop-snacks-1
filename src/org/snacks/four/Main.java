@@ -18,7 +18,13 @@ public class Main {
 		arrayList.add("Geenitti");
 		arrayList.add("Geenutti");
 		
-		
+		for (String name : arrayList) {
+			for(int i = 0; i < name.length(); i++) {
+				  char lettera = name.charAt(i);
+				    break;
+			}
+		}
+	
 	}
 
 }
