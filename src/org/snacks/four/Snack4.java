@@ -2,7 +2,7 @@ package org.snacks.four;
 
 import java.util.ArrayList;
 
-public class Main {
+public class Snack4 {
 
 	public static void main(String[] args) {
 		ArrayList<String> arrayList = new ArrayList<String>();
@@ -18,13 +18,15 @@ public class Main {
 		arrayList.add("Geenitti");
 		arrayList.add("Geenutti");
 		
-		for (String name : arrayList) {
-			for(int i = 0; i < name.length(); i++) {
-				  char lettera = name.charAt(i);
-				    break;
+		boolean swap = false;
+		
+		do {
+			
+			for(int i = 1; i < arrayList.size(); i++) {
+				
 			}
-		}
-	
+			
+		} while (swap);
 	}
 
 }
