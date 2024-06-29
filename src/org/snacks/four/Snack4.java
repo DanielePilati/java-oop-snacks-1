@@ -23,7 +23,15 @@ public class Snack4 {
 		do {
 			
 			for(int i = 1; i < arrayList.size(); i++) {
-				
+				String firstWord = arrayList.get(i);
+				String secondWord = arrayList.get(i-1);
+				if (firstWord.compareTo(secondWord) > 0) {
+					arrayList.add(i, secondWord);
+					arrayList.add(i-1, firstWord);	
+					swap = false;
+				} else {
+					swap = true;
+				}
 			}
 			
 		} while (swap);
