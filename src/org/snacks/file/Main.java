@@ -11,8 +11,10 @@ public class Main {
 		String data = "";
 	    try {
 	    	File textFile = new File("readme.txt");
-			Scanner scanner = new Scanner(textFile);
+	    	Scanner scanner = new Scanner(textFile);
 			data = scanner.nextLine();
+			scanner.close();
+
 		} catch (FileNotFoundException e) {
 			System.out.println("file not found");
 		}
