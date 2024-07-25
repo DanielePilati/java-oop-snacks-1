@@ -12,7 +12,9 @@ public class Main {
 	    try {
 	    	File textFile = new File("readme.txt");
 	    	Scanner scanner = new Scanner(textFile);
-			data = scanner.nextLine();
+	        while (scanner.hasNextLine()) {
+	            data = scanner.nextLine();
+	        }
 			scanner.close();
 
 		} catch (FileNotFoundException e) {
