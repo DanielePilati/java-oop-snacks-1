@@ -10,7 +10,7 @@ public class Main {
 		
 		String data = "";
 	    try {
-	    	File textFile = new File("readme.txt");
+	    	File textFile = new File("readme.txt.txt");
 	    	Scanner scanner = new Scanner(textFile);
 	        while (scanner.hasNextLine()) {
 	            data = scanner.nextLine();
